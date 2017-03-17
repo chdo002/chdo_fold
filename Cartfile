@@ -1,0 +1,4 @@
+github "realm/realm-cocoa"
+gitHub "hackiftekhar/IQKeyboardManager"
+github  "SnapKit/SnapKit"
+github  "jdg/MBProgressHUD"
