@@ -12,7 +12,7 @@ import RealmSwift
 
 struct NodeStruct {
     
-    var subNode : Results<NodeMD>!
+    var subNode : Results<NodeMD>?
     var folds   = [NodeMD]()
     var files   = [NodeMD]()
     
