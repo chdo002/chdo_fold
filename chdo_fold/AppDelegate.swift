@@ -17,15 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
+        // 设置根目录
         let rel = try? Realm()
-        
         let root = NodeMD()
         root.id = "root"
         root.nodeName = "根目录"
         root.createTimeStamp = Date.timeStamp()
         root.nodeType = NodeType.fold.rawValue
-        
         try? rel?.write {
             rel?.add(root, update: true)
         }

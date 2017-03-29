@@ -13,8 +13,14 @@ import RealmSwift
 
 class TableViewController: UITableViewController {
 
-    var currentNode: NodeMD?
+    // 当前目录节点
+    var currentNode: NodeMD? {
+        didSet{
+            self.selectSubNodes()
+        }
+    }
     
+    // 当前目录子节点
     var nodes: NodeStruct!
     
     override func viewDidLoad() {
@@ -23,7 +29,7 @@ class TableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        selectSubNodes()
+        
     }
     
     func selectSubNodes(){
@@ -33,7 +39,7 @@ class TableViewController: UITableViewController {
             parentID = id
         }
         let subNodes = relm.objects(NodeMD.self).filter("parentNodeID = %@", parentID)
-        nodes = NodeStruct(nodes: subNodes)
+        self.nodes = NodeStruct(nodes: subNodes)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int { return 2 }
@@ -61,7 +67,6 @@ class TableViewController: UITableViewController {
         }
         return cell
     }
-
     
     @IBAction func editAction(_ sender: UIBarButtonItem) {
         

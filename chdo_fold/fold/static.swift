@@ -9,26 +9,6 @@
 import Foundation
 import UIKit
 
-public enum NodeType: Int8 {
-    case fold = 0
-    case file = 1
-}
-
-extension Int8 {
-    
-    var nodeType: NodeType {
-        switch self {
-        case NodeType.file.rawValue:
-            return NodeType.file
-        default:
-            return NodeType.fold
-        }
-    }
-    
-    var isFold: Bool {
-        return self == NodeType.fold.rawValue
-    }
-}
 
 extension Date {
     static func timeStamp() -> String {
@@ -48,15 +28,14 @@ class UIHelper {
             let action = UIAlertAction(title: ac.name, style: .default, handler: ac.handler)
             actionSheet.addAction(action)
         }
-        let cancle = UIAlertAction(title: "qux", style: .cancel, handler: nil)
+        let cancle = UIAlertAction(title: "取消", style: .cancel, handler: nil)
         actionSheet.addAction(cancle)
         viewcontroller.present(actionSheet, animated: true, completion: nil)
     }
     
-    
     static func showTextAlert(_ title: String,
                        viewcontroller: UIViewController,
-                     textfieldHandler: ((UITextField) -> Swift.Void)? = nil,
+                     textfieldHandler: @escaping ((UITextField) -> Swift.Void),
                        comfireHandler: @escaping (UIAlertAction) -> Swift.Void,
                         cancleHandler: @escaping (UIAlertAction) -> Swift.Void)
     {

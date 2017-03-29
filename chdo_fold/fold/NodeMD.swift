@@ -7,10 +7,8 @@
 //  Copyright © 2017年 yw. All rights reserved.
 //
 
-import Foundation
+
 import RealmSwift
-
-
 
 class NodeMD: Object {
     
@@ -22,5 +20,26 @@ class NodeMD: Object {
     
     override class func primaryKey() -> String? {
         return "id"
+    }
+}
+
+public enum NodeType: Int8 {
+    case fold = 0
+    case file = 1
+}
+
+extension Int8 {
+    
+    var nodeType: NodeType {
+        switch self {
+        case NodeType.file.rawValue:
+            return NodeType.file
+        default:
+            return NodeType.fold
+        }
+    }
+    
+    var isFold: Bool {
+        return self == NodeType.fold.rawValue
     }
 }

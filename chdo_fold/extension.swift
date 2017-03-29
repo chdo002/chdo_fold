@@ -7,8 +7,7 @@
 //  Copyright © 2017年 yw. All rights reserved.
 //
 
-import Foundation
-
+import UIKit
 
 // fold service
 extension TableViewController {
@@ -19,19 +18,54 @@ extension TableViewController {
     }
     
     func insertNewfold(){
+        
         let newFold = NodeMD()
         newFold.parentNodeID = self.currentNode?.parentNodeID
         newFold.id = Date.timeStamp()
+        newFold.nodeType = NodeType.fold.rawValue
         
-        UIHelper.showTextAlert("Input node nmae", viewcontroller: self, comfireHandler: { (alert) in
+        var textfield: UITextField!
+        UIHelper.showTextAlert("Input Fold nmae", viewcontroller: self, textfieldHandler: { (field) in
+            textfield = field
+        }, comfireHandler: { (_) in
             
-        }) { (alert) in
+            newFold.nodeName = textfield.text
+            newFold.createTimeStamp = Date.timeStamp()
+            
+            do {
+                try NodeDB.saveNode(node: newFold)
+            } catch let err {
+                print(err.localizedDescription)
+            }
+
+        }) { (_) in
             
         }
     }
     
     func insertNewfile(){
+        let newFold = NodeMD()
+        newFold.parentNodeID = self.currentNode?.parentNodeID
+        newFold.id = Date.timeStamp()
+        newFold.nodeType = NodeType.file.rawValue
         
+        var textfield: UITextField!
+        UIHelper.showTextAlert("Input File nmae", viewcontroller: self, textfieldHandler: { (field) in
+            textfield = field
+        }, comfireHandler: { (_) in
+            
+            newFold.nodeName = textfield.text
+            newFold.createTimeStamp = Date.timeStamp()
+            
+            do {
+                try NodeDB.saveNode(node: newFold)
+            } catch let err {
+                print(err.localizedDescription)
+            }
+            
+        }) { (_) in
+            
+        }
     }
     
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB839B4E3EF2127953DFAF1 /* Pods_chdo_fold.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A224FBCAE012E7F735939C /* Pods_chdo_fold.framework */; };
+		E941BF161E83F07B00086BA5 /* NodeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941BF151E83F07B00086BA5 /* NodeDB.swift */; };
 		E9820EA41E780F530059DCB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9820EA31E780F530059DCB3 /* AppDelegate.swift */; };
 		E9820EA91E780F530059DCB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9820EA71E780F530059DCB3 /* Main.storyboard */; };
 		E9820EAB1E780F530059DCB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9820EAA1E780F530059DCB3 /* Assets.xcassets */; };
@@ -14,8 +16,6 @@
 		E9820EB91E780F530059DCB3 /* chdo_foldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9820EB81E780F530059DCB3 /* chdo_foldTests.swift */; };
 		E9820EC41E780F530059DCB3 /* chdo_foldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9820EC31E780F530059DCB3 /* chdo_foldUITests.swift */; };
 		E9820ED21E781E3A0059DCB3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9820ED11E781E3A0059DCB3 /* TableViewController.swift */; };
-		E9820ED51E7821D10059DCB3 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9820ED31E7821D10059DCB3 /* Realm.framework */; };
-		E9820ED61E7821D10059DCB3 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9820ED41E7821D10059DCB3 /* RealmSwift.framework */; };
 		E9820ED91E78225F0059DCB3 /* NodeMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9820ED81E78225F0059DCB3 /* NodeMD.swift */; };
 		E9820EDC1E7824060059DCB3 /* static.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9820EDB1E7824060059DCB3 /* static.swift */; };
 		E9820EDE1E7827890059DCB3 /* NodeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9820EDD1E7827890059DCB3 /* NodeStruct.swift */; };
@@ -40,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29C08B61FC2859AB4F37B075 /* Pods-chdo_fold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chdo_fold.release.xcconfig"; path = "Pods/Target Support Files/Pods-chdo_fold/Pods-chdo_fold.release.xcconfig"; sourceTree = "<group>"; };
+		5670A36B382A2375410BF3CC /* Pods-chdo_fold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chdo_fold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chdo_fold/Pods-chdo_fold.debug.xcconfig"; sourceTree = "<group>"; };
+		72A224FBCAE012E7F735939C /* Pods_chdo_fold.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chdo_fold.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E941BF151E83F07B00086BA5 /* NodeDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeDB.swift; sourceTree = "<group>"; };
 		E9820EA01E780F530059DCB3 /* chdo_fold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chdo_fold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9820EA31E780F530059DCB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9820EA81E780F530059DCB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,8 +57,6 @@
 		E9820EC31E780F530059DCB3 /* chdo_foldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chdo_foldUITests.swift; sourceTree = "<group>"; };
 		E9820EC51E780F530059DCB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9820ED11E781E3A0059DCB3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		E9820ED31E7821D10059DCB3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		E9820ED41E7821D10059DCB3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		E9820ED81E78225F0059DCB3 /* NodeMD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeMD.swift; sourceTree = "<group>"; };
 		E9820EDB1E7824060059DCB3 /* static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = static.swift; sourceTree = "<group>"; };
 		E9820EDD1E7827890059DCB3 /* NodeStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeStruct.swift; sourceTree = "<group>"; };
@@ -66,8 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9820ED61E7821D10059DCB3 /* RealmSwift.framework in Frameworks */,
-				E9820ED51E7821D10059DCB3 /* Realm.framework in Frameworks */,
+				1FB839B4E3EF2127953DFAF1 /* Pods_chdo_fold.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,15 +89,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63AAD6E428B96B7AB61CA3BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72A224FBCAE012E7F735939C /* Pods_chdo_fold.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C28BBB0E9B594EA4DDE87187 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5670A36B382A2375410BF3CC /* Pods-chdo_fold.debug.xcconfig */,
+				29C08B61FC2859AB4F37B075 /* Pods-chdo_fold.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E9820E971E780F530059DCB3 = {
 			isa = PBXGroup;
 			children = (
-				E9820ED31E7821D10059DCB3 /* Realm.framework */,
-				E9820ED41E7821D10059DCB3 /* RealmSwift.framework */,
 				E9820EA21E780F530059DCB3 /* chdo_fold */,
 				E9820EB71E780F530059DCB3 /* chdo_foldTests */,
 				E9820EC21E780F530059DCB3 /* chdo_foldUITests */,
 				E9820EA11E780F530059DCB3 /* Products */,
+				C28BBB0E9B594EA4DDE87187 /* Pods */,
+				63AAD6E428B96B7AB61CA3BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				E9820ED81E78225F0059DCB3 /* NodeMD.swift */,
+				E941BF151E83F07B00086BA5 /* NodeDB.swift */,
 				E9820EDD1E7827890059DCB3 /* NodeStruct.swift */,
 				E9820EDB1E7824060059DCB3 /* static.swift */,
 			);
@@ -160,10 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9820EC81E780F530059DCB3 /* Build configuration list for PBXNativeTarget "chdo_fold" */;
 			buildPhases = (
+				E4BB50BDFA58A98449892B72 /* [CP] Check Pods Manifest.lock */,
 				E9820E9C1E780F530059DCB3 /* Sources */,
 				E9820E9D1E780F530059DCB3 /* Frameworks */,
 				E9820E9E1E780F530059DCB3 /* Resources */,
-				E9820EDA1E7823740059DCB3 /* ShellScript */,
+				9E0ED4818EB3715955485BAF /* [CP] Embed Pods Frameworks */,
+				DA49633DA6F6B3E945E8563C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +243,7 @@
 				TargetAttributes = {
 					E9820E9F1E780F530059DCB3 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 2UPL3JMY5X;
 						ProvisioningStyle = Automatic;
 					};
 					E9820EB31E780F530059DCB3 = {
@@ -284,20 +306,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E9820EDA1E7823740059DCB3 /* ShellScript */ = {
+		9E0ED4818EB3715955485BAF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chdo_fold/Pods-chdo_fold-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA49633DA6F6B3E945E8563C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chdo_fold/Pods-chdo_fold-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BB50BDFA58A98449892B72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -306,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E941BF161E83F07B00086BA5 /* NodeDB.swift in Sources */,
 				E9820EA41E780F530059DCB3 /* AppDelegate.swift in Sources */,
 				E9820ED91E78225F0059DCB3 /* NodeMD.swift in Sources */,
 				E9820ED21E781E3A0059DCB3 /* TableViewController.swift in Sources */,
@@ -459,12 +512,11 @@
 		};
 		E9820EC91E780F530059DCB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5670A36B382A2375410BF3CC /* Pods-chdo_fold.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				DEVELOPMENT_TEAM = 2UPL3JMY5X;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = chdo_fold/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yw.chdo-fold";
@@ -475,12 +527,11 @@
 		};
 		E9820ECA1E780F530059DCB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C08B61FC2859AB4F37B075 /* Pods-chdo_fold.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				DEVELOPMENT_TEAM = 2UPL3JMY5X;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = chdo_fold/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yw.chdo-fold";
