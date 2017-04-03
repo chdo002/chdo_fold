@@ -40,4 +40,8 @@ class UIHelper {
         alertSction.addAction(cancle)
         viewcontroller.present(alertSction, animated: true, completion: nil)
     }
+    
+    static func showAlert(message: String){
+        
+    }
 }

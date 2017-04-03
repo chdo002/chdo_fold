@@ -6,4 +6,5 @@ pod 'SnapKit'
 pod 'MBProgressHUD'
 pod 'AsyncDisplayKit'
 pod 'IQKeyboardManager'
+pod 'Changeset'
 end 

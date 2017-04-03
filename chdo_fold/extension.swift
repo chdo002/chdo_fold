@@ -29,6 +29,11 @@ extension TableViewController {
             textfield = field
         }, comfireHandler: { (_) in
             
+            if textfield.text == nil || textfield.text == "" {
+                
+                return
+            }
+            
             newFold.nodeName = textfield.text
             newFold.createTimeStamp = Date.timeStamp()
             

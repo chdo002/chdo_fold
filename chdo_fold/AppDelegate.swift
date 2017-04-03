@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        let root = createRootNode()
+        ((window?.rootViewController as? UINavigationController)?.viewControllers.first as! TableViewController).currentNode = root
+        return true
+    }
+    
+    func createRootNode() -> NodeMD {
         // 设置根目录
         let rel = try? Realm()
         let root = NodeMD()
@@ -27,9 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         try? rel?.write {
             rel?.add(root, update: true)
         }
-        
-        ((window?.rootViewController as? UINavigationController)?.viewControllers.first as! TableViewController).currentNode = root
-        return true
+        return root
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

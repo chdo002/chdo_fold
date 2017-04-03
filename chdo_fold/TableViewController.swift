@@ -20,7 +20,7 @@ class TableViewController: UITableViewController {
         }
     }
     
-    // 当前目录子节点
+    // 当前目录结构
     var nodes: NodeStruct!
     
     override func viewDidLoad() {
@@ -32,6 +32,7 @@ class TableViewController: UITableViewController {
         
     }
     
+    // 获取本地子节点
     func selectSubNodes(){
         let relm = try! Realm()
         var parentID = "root"
@@ -42,6 +43,7 @@ class TableViewController: UITableViewController {
         self.nodes = NodeStruct(nodes: subNodes)
     }
 
+    
     override func numberOfSections(in tableView: UITableView) -> Int { return 2 }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
