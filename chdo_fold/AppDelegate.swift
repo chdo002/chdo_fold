@@ -14,11 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let root = createRootNode()
-        ((window?.rootViewController as? UINavigationController)?.viewControllers.first as! TableViewController).currentNode = root
+        
+        let vc = TableViewController()
+            vc.currentNode = root
+        
+        let navi = UINavigationController(rootViewController: vc)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = navi
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
     

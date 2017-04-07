@@ -13,17 +13,30 @@ import RealmSwift
 struct NodeStruct {
     
     var subNode : Results<NodeMD>?
-    var folds   = [NodeMD]()
-    var files   = [NodeMD]()
+
+    var folds = [NodeMD]()
+    var files = [NodeMD]()
     
-    init(nodes: Results<NodeMD>) {
-        for nd in nodes {
+    init(currentNode: NodeMD?) {
+        
+        let relm = try! Realm()
+        var parentID = "root"
+        if let id = currentNode?.id {
+            parentID = id
+        }
+        
+        self.subNode = relm.objects(NodeMD.self).filter("parentNodeID = %@", parentID)
+        
+        for nd in subNode! {
             if nd.nodeType.isFold {
                 folds.append(nd)
-            } else{
+            } else {
                 files.append(nd)
             }
         }
-        self.subNode = nodes
+//        folds   = relm.objects(NodeMD.self).filter("parentNodeID = %@ and nodeType = 0", parentID)
+//        files   = relm.objects(NodeMD.self).filter("parentNodeID = %@ and nodeType = 1", parentID)
+        
     }
+    
 }

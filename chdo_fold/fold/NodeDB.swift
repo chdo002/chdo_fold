@@ -11,12 +11,20 @@ import RealmSwift
 import Changeset
 
 class NodeDB {
-    static func saveNode(node: NodeMD) throws {
+    
+    static func saveNode(node: NodeMD) throws {    
         
-        // 设置根目录
         let rel = try? Realm()
         try rel?.write {
             rel?.add(node, update: true)
+        }
+    }
+    
+    static func deleteNode(nodes: List<NodeMD>) throws {
+        let rel = try? Realm()
+        
+        try rel?.write {
+            rel?.delete(nodes)
         }
     }
 }
