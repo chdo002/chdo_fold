@@ -18,7 +18,7 @@ class NodeMD: Object {
     dynamic var createTimeStamp: String?
     dynamic var nodeType: Int8 = NodeType.fold.rawValue
     
-//    dynamic var 
+    var subNodes = List<NodeMD>()
     
     override class func primaryKey() -> String? {
         return "id"

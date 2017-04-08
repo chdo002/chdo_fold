@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1FB839B4E3EF2127953DFAF1 /* Pods_chdo_fold.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A224FBCAE012E7F735939C /* Pods_chdo_fold.framework */; };
 		E941BF161E83F07B00086BA5 /* NodeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941BF151E83F07B00086BA5 /* NodeDB.swift */; };
-		E96AD8521E976DBE0081552A /* DeleteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96AD8511E976DBE0081552A /* DeleteNode.swift */; };
+		E96AD8521E976DBE0081552A /* EditNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96AD8511E976DBE0081552A /* EditNode.swift */; };
 		E9820EA41E780F530059DCB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9820EA31E780F530059DCB3 /* AppDelegate.swift */; };
 		E9820EAB1E780F530059DCB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9820EAA1E780F530059DCB3 /* Assets.xcassets */; };
 		E9820EAE1E780F530059DCB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9820EAC1E780F530059DCB3 /* LaunchScreen.storyboard */; };
@@ -43,7 +43,7 @@
 		5670A36B382A2375410BF3CC /* Pods-chdo_fold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chdo_fold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chdo_fold/Pods-chdo_fold.debug.xcconfig"; sourceTree = "<group>"; };
 		72A224FBCAE012E7F735939C /* Pods_chdo_fold.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chdo_fold.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E941BF151E83F07B00086BA5 /* NodeDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeDB.swift; sourceTree = "<group>"; };
-		E96AD8511E976DBE0081552A /* DeleteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteNode.swift; sourceTree = "<group>"; };
+		E96AD8511E976DBE0081552A /* EditNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNode.swift; sourceTree = "<group>"; };
 		E9820EA01E780F530059DCB3 /* chdo_fold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chdo_fold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9820EA31E780F530059DCB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9820EAA1E780F530059DCB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 				E9820ED71E7821FA0059DCB3 /* fold */,
 				E9820EA31E780F530059DCB3 /* AppDelegate.swift */,
 				E9820ED11E781E3A0059DCB3 /* TableViewController.swift */,
-				E96AD8511E976DBE0081552A /* DeleteNode.swift */,
+				E96AD8511E976DBE0081552A /* EditNode.swift */,
 				E9820EAA1E780F530059DCB3 /* Assets.xcassets */,
 				E9820EAC1E780F530059DCB3 /* LaunchScreen.storyboard */,
 				E9820EAF1E780F530059DCB3 /* Info.plist */,
@@ -354,7 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E96AD8521E976DBE0081552A /* DeleteNode.swift in Sources */,
+				E96AD8521E976DBE0081552A /* EditNode.swift in Sources */,
 				E941BF161E83F07B00086BA5 /* NodeDB.swift in Sources */,
 				E9820EA41E780F530059DCB3 /* AppDelegate.swift in Sources */,
 				E9820ED91E78225F0059DCB3 /* NodeMD.swift in Sources */,

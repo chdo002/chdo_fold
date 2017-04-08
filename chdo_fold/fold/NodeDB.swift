@@ -23,13 +23,9 @@ class NodeDB {
     
     static func deleteNode(nodes: List<NodeMD>) throws {
         let rel = try? Realm()
-        
         try rel?.write {
             rel?.delete(nodes)
         }
-        
-        
-        
     }
     
 
