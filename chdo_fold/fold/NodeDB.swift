@@ -15,6 +15,7 @@ class NodeDB {
     static func saveNode(node: NodeMD) throws {    
         
         let rel = try? Realm()
+        
         try rel?.write {
             rel?.add(node, update: true)
         }
@@ -26,7 +27,13 @@ class NodeDB {
         try rel?.write {
             rel?.delete(nodes)
         }
+        
+        
+        
     }
+    
+
+    
 }
 
 

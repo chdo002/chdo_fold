@@ -38,6 +38,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.view.addSubview(self.tableView)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -50,7 +51,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.view.backgroundColor = UIColor.white
         
         let addButton = UIBarButtonItem(title: "添加节点", style: .done, target: self, action: #selector(editAction))
-        self.navigationItem.setRightBarButton(addButton, animated: false)
+        let refreshbut = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector((refresh)))
+        self.navigationItem.setRightBarButtonItems([refreshbut, addButton], animated: true)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -118,9 +120,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func editAction() {
         
         UIHelper.showActionSheet("add new node", viewcontroller: self, actions:
-            ("addFold", {_ in
+            ("add_Fold", {_ in
             self.insertNewfold()
-        }), ("addFile", {_ in
+        }), ("add_File", {_ in
             self.insertNewfile()
         }))
     }

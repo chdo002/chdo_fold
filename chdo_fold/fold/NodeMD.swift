@@ -17,6 +17,9 @@ class NodeMD: Object {
     dynamic var parentNodeID: String?
     dynamic var createTimeStamp: String?
     dynamic var nodeType: Int8 = NodeType.fold.rawValue
+    
+//    dynamic var 
+    
     override class func primaryKey() -> String? {
         return "id"
     }
@@ -29,9 +32,9 @@ public enum NodeType: Int8 {
     func tyoeImage() -> UIImage{
         switch self {
         case .file:
-            return #imageLiteral(resourceName: "fold")
-        default:
             return #imageLiteral(resourceName: "file")
+        default:
+            return #imageLiteral(resourceName: "fold")
         }
     }
 }
